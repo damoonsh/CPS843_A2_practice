@@ -1,7 +1,13 @@
+"""
+Test script
+"""
 import unittest
 from sample import increment_by_two
 
 class TestSampleMethods(unittest.TestCase):
+    """
+    Test harness
+    """
 
     def test_increment_by_two(self):
         """
