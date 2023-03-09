@@ -1,2 +1,12 @@
-def foo(a):
+"""
+Helper functions live here
+"""
+
+
+def increment_by_two(var_to_increment):
+    """
+    This function increments by two
+    :param var_to_increment: param to increment
+    :return: incremented variable
+    """
     return a + 2
