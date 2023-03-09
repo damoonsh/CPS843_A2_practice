@@ -9,4 +9,4 @@ def increment_by_two(var_to_increment):
     :param var_to_increment: param to increment
     :return: incremented variable
     """
-    return a + 2
+    return var_to_increment + 2
