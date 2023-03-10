@@ -17,7 +17,8 @@ class TestSampleMethods(unittest.TestCase):
         self.assertEqual(increment_by_two(-2), 0)
         self.assertEqual(increment_by_two(0), 2)
         self.assertEqual(increment_by_two(3), 5)
-    
+
+
     def test_increment_by_three(self):
         """
         Test increments of 3
@@ -26,5 +27,6 @@ class TestSampleMethods(unittest.TestCase):
         self.assertEqual(increment_by_three(0), 3)
         self.assertEqual(increment_by_three(3), 6)
 
+        
 if __name__ == '__main__':
     unittest.main()
