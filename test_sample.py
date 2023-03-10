@@ -2,7 +2,7 @@
 Test script
 """
 import unittest
-from sample import increment_by_two
+from sample import increment_by_two, increment_by_three
 
 class TestSampleMethods(unittest.TestCase):
     """
@@ -11,11 +11,19 @@ class TestSampleMethods(unittest.TestCase):
 
     def test_increment_by_two(self):
         """
-        Test increments
+        Test increments of 2
         """
         self.assertEqual(increment_by_two(-2), 0)
         self.assertEqual(increment_by_two(0), 2)
         self.assertEqual(increment_by_two(3), 5)
+        
+    def test_increment_by_two(self):
+        """
+        Test increments of 3
+        """
+        self.assertEqual(increment_by_two(-2), 1)
+        self.assertEqual(increment_by_two(0), 3)
+        self.assertEqual(increment_by_two(3), 6)
 
 if __name__ == '__main__':
     unittest.main()
