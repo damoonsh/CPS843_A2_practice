@@ -27,6 +27,6 @@ class TestSampleMethods(unittest.TestCase):
         self.assertEqual(increment_by_three(0), 3)
         self.assertEqual(increment_by_three(3), 6)
 
-        
+
 if __name__ == '__main__':
     unittest.main()
