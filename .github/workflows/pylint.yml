@@ -1,6 +1,15 @@
 name: Pylint
 
-on: [push]
+# on: [push]
+on:
+  workflow_dispatch:
+    inputs:
+      why:
+        description: 'Just a simple question'
+        required: false
+      how:
+        required: true
+        description: 'Another dumb question'
 
 jobs:
   build:
